@@ -28,12 +28,11 @@ export function* onAddProductStart(){
 export function* fetchProducts({ payload }){
     try {
         const products = yield handleFetchProducts(payload);
-        console.log(products);
         yield put(
             setProducts(products)
         );
     } catch (err) {
-        // console.log(err);
+        console.log(err);
     }
 }
 

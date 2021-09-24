@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import shopMen from './../../assets/shopMen.jpg';
 import shopWomen from './../../assets/shopWomen.jpg';
 import './styles.scss';
@@ -13,7 +14,7 @@ const Directory = () => {
                         backgroundImage: `url(${shopWomen})`
                     }}
                 >
-                    <a>Shop Womens</a>
+                    <Link to="/search/womens">Shop Womens</Link>
                 </div>
                 <div
                     className="item"
@@ -21,7 +22,7 @@ const Directory = () => {
                         backgroundImage: `url(${shopMen})`
                     }}
                 >
-                    <a>Shop Mens</a>
+                    <Link to="/search/mens">Shop Mens</Link>
                 </div>
             </div>
         </div>

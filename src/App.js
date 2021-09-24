@@ -14,6 +14,7 @@ import WithAuth from './hoc/withAuth';
 import MainLayout from './layouts/MainLayout';
 import HomePageLayout from './layouts/HomePageLayout';
 import AdminLayout from './layouts/AdminLayout';
+import DashBoardLayout from './layouts/DashboardLayout';
 
 //pages
 import HomePage from './pages/HomePage';
@@ -25,6 +26,7 @@ import Dashboard from './pages/Dashboard';
 import Admin from './pages/Admin';
 import ProductDetails from './pages/ProductDetails';
 import Cart from './pages/Cart';
+import Order from './pages/Order';
 
 import './default.scss';
 
@@ -96,6 +98,15 @@ const App = props => {
               <MainLayout>
                 <Dashboard/>
               </MainLayout>
+            </WithAuth>
+          )}/>
+
+          <Route path="/order/:orderID" render={() => 
+          (
+            <WithAuth>
+              <DashBoardLayout>
+                <Order/>
+              </DashBoardLayout>
             </WithAuth>
           )}/>
 

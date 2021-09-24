@@ -70,11 +70,11 @@ const Checkout = () => {
                                                         Continue Shopping
                                                     </Button>
                                                 </td>
-                                                <td>
+                                                {/* <td>
                                                     <Button>
                                                         Checkout
                                                     </Button>
-                                                </td>
+                                                </td> */}
                                             </tr>
                                         </tbody>
                                     </table>

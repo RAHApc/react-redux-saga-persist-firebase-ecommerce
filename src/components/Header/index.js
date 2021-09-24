@@ -25,7 +25,7 @@ const Header = (props) => {
             <div className="wrap">
                 <div className="logo">
                     <Link to="/">
-                        <img src={logo} alt="logo" height="70" />
+                        <img src={logo} alt="logo" height="60" />
                     </Link>
                 </div>
 
